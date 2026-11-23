@@ -9,6 +9,12 @@ function fail(message: string): never {
 
 // The chosen entry text (279 Unicode code points, 279 bytes, no trailing
 // newline). Written verbatim to /output/entry.txt. Deterministic, no network.
+// Round 2 (replaces the round-1 coelacanth, 47.69%): "The Comet" — a boy
+// finds one blue arm of a Linckia starfish and watches it regrow a whole
+// body. Withheld reveal in the last lines (the arm was never broken); fact
+// verified by search (a single Linckia arm regrows a complete body, the
+// "comet" form). Four candidates scored against the brief's five criteria
+// in CANDIDATES.md; this one had no visible weak spot.
 const TEXT =
   "On the reef, a boy finds one blue arm,\n" +
   "alone, no star attached.\n" +
