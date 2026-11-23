@@ -7,25 +7,28 @@ function fail(message: string): never {
   process.exit(1);
 }
 
-// The chosen entry text (279 Unicode code points, 279 bytes, no trailing
+// The chosen entry text (254 Unicode code points, 254 bytes, no trailing
 // newline). Written verbatim to /output/entry.txt. Deterministic, no network.
-// Round 2 (replaces the round-1 coelacanth, 47.69%): "The Comet" — a boy
-// finds one blue arm of a Linckia starfish and watches it regrow a whole
-// body. Withheld reveal in the last lines (the arm was never broken); fact
-// verified by search (a single Linckia arm regrows a complete body, the
-// "comet" form). Four candidates scored against the brief's five criteria
-// in CANDIDATES.md; this one had no visible weak spot.
+// Round 4 (replaces the round-2/3 starfish "Comet", plateaued at 61.63%):
+// "The Flatworm" — a planarian is trained, decapitated, regrows its whole
+// head, and still remembers what it learned. Fact verified by search:
+// Shomrat & Levin (2013), Tufts, Journal of Experimental Biology — trained,
+// decapitated planaria showed memory retrieval after regenerating a new head;
+// memory is stored outside the brain. Turn in the last two lines: the head
+// was new, the memory was not. Composed fresh in this session from the facts.
 const TEXT =
-  "On the reef, a boy finds one blue arm,\n" +
-  "alone, no star attached.\n" +
-  "He leaves it in a tide pool.\n" +
-  "Weeks later, four buds\n" +
-  "push from its broken end.\n" +
-  "Month by month they grow,\n" +
-  "five small arms, one long one,\n" +
-  "a comet, moving alone.\n" +
-  "The arm was never broken.\n" +
-  "It was a whole star, beginning.";
+  "A scientist takes\n" +
+  "a flatworm's head away,\n" +
+  "brain, eyes, and all.\n" +
+  "Two weeks later\n" +
+  "the head grows back,\n" +
+  "new brain, new eyes.\n" +
+  "But the worm still knows\n" +
+  "rough means food, smooth\n" +
+  "means none. It crosses\n" +
+  "the rough side first.\n" +
+  "The head was new.\n" +
+  "The memory was not.";
 
 // The gate: the competition's hard limit is 1–280 Unicode code points,
 // not only white space. Check the text BEFORE writing, and check the file
