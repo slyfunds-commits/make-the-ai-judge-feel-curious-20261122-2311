@@ -10,17 +10,16 @@ function fail(message: string): never {
 // The chosen entry text (279 Unicode code points, 279 bytes, no trailing
 // newline). Written verbatim to /output/entry.txt. Deterministic, no network.
 const TEXT =
-  "1938. A trawler off South Africa\n" +
-  "hauls in its net.\n" +
-  "Among the catch, a fish no one aboard\n" +
-  "can name.\n" +
-  "Blue as deep water.\n" +
-  "Fins like small hands.\n" +
-  "A tail with three lobes.\n" +
-  "The museum woman sketches it,\n" +
-  "sends the sketch to a professor,\n" +
-  "who answers:\n" +
-  "extinct for sixty-six million years.";
+  "On the reef, a boy finds one blue arm,\n" +
+  "alone, no star attached.\n" +
+  "He leaves it in a tide pool.\n" +
+  "Weeks later, four buds\n" +
+  "push from its broken end.\n" +
+  "Month by month they grow,\n" +
+  "five small arms, one long one,\n" +
+  "a comet, moving alone.\n" +
+  "The arm was never broken.\n" +
+  "It was a whole star, beginning.";
 
 // The gate: the competition's hard limit is 1–280 Unicode code points,
 // not only white space. Check the text BEFORE writing, and check the file
